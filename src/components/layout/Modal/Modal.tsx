@@ -1,5 +1,3 @@
-import React, { useState, useEffect, useRef } from "react";
-
 interface ModalProps {
   children: React.ReactNode;
   isOpen: boolean;
@@ -20,7 +18,10 @@ const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {
             }}
           >
             <div className="flex justify-end mr-[-0.5rem]">
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#131319] cursor-pointer" onClick={onClose}>
+              <div
+                className="flex items-center justify-center w-8 h-8 rounded-full bg-[#131319] cursor-pointer"
+                onClick={onClose}
+              >
                 <svg
                   width="16"
                   height="16"
